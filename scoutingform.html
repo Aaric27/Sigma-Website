@@ -257,10 +257,14 @@ p{
     const form = document.forms['scoutingform'];
 
     form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => alert('Form submitted successfully!'))
-            .catch(error => alert('Error: ' + error.message));
-    });
+    e.preventDefault();
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+    })
+    .then(response => response.json())
+    .then(data => alert('Form submitted successfully!'))
+    .catch(error => console.error('Error:', error));
+});
 </script>
 </html>
