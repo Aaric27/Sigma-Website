@@ -48,7 +48,7 @@ p{
 </head>
 <body style="background-color: #333333;">
     <div class="container">
-        <form name="scoutingform" id="scoutingform">  
+        <form name="scoutingform" id="scoutingform" method="POST" action="https://script.google.com/macros/s/AKfycbwu4kgs3MB7BCS3_9EEOYWSSGvFXx5kPRzrEwNB9UB4I4QGB-U1uKMSInUJbttVWk83/exec">  
             <table border="0" style="width:100%; border-color: black;">
             <!--Match Information-->
                 <tr>
@@ -252,19 +252,5 @@ p{
                     </tr>
             </table>
 </body>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxx7JX5XDtpmW7Yt7a28vR81p7J78qgXEVH1bzuemrTbiKEm0JUmP81DdLF971q6lOdg/exec';  // Replace with the Web App URL from your Google Apps Script
-    const form = document.forms['scoutingform'];
 
-    form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form),
-    })
-    .then(response => response.json())
-    .then(data => alert('Form submitted successfully!'))
-    .catch(error => console.error('Error:', error));
-});
-</script>
 </html>
