@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Password page</title>
+</head>
+<body style="background-color: #333333;">
+    <p ><h1 style="color:white; font-family: Arial, Helvetica, sans-serif;">Only for 9692's Scouts</h1></p>
+    <p style="color:white; font-family: Arial, Helvetica, sans-serif;">Enter your password</p>
+    <input type="text" id="passwordcollect">
+    <button id="checkpassword" onClick="CheckPassword()">Verify</button>
+<script>
+    function CheckPassword(){
+        var password= passwordcollect.value;
+        if(password=="arz4re"){
+            window.open("scoutingform.html");
+        }
+    }
+
+</script>
+</body>
