@@ -1,6 +1,6 @@
 
 
-function addamp(){
+/* function addamp(){
     amp.value++;
     document.getElementById("amp").innerHTML=amp;
 }
@@ -66,6 +66,7 @@ function subtractpassed(){
     passed.value--;
     document.getElementById("passed").innerHTML=passed;
 }
+*/
 
 
 function EPAbreakdown(){
