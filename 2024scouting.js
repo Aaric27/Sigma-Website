@@ -5,7 +5,7 @@
     amp.value++;
     document.getElementById("amp").innerHTML=amp;
 }
-function subtractamp(){
+function subtractamp(e){
      e.preventDefault();
     
     amp.value--;
