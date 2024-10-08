@@ -1,4 +1,14 @@
+document.getElementById("submit").addEventListener("click",async (e)=>{
+ e.preventDefault();
+ 
+ await fetch("https://script.google.com/macros/s/AKfycbwu4kgs3MB7BCS3_9EEOYWSSGvFXx5kPRzrEwNB9UB4I4QGB-U1uKMSInUJbttVWk83/exec",{
+  method:"POST",
+  body:JSON.stringify({
 
+   yooo:"yoo"
+  })
+ }).then(res=>console.log(res)).catch(err=>console.log(err))
+})
 
  function addamp(e){
      e.preventDefault();
