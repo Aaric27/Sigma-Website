@@ -2,15 +2,20 @@
 
  function addamp(e){
      e.preventDefault();
-  let amp = document.getElementById("amp");
-    amp.value++;
+  let amp = document.getElementById("amp").value;
+    // amp.value++;
+  if(!amp){
+   amp=0;
+  }
     document.getElementById("amp").innerHTML=amp;
   return false;
 }
 function subtractamp(e){
      e.preventDefault();
-      let amp = document.getElementById("amp");
-
+      let amp = document.getElementById("amp").value;
+     if(!amp){
+      amp=0
+     }
     amp.value--;
     document.getElementById("amp").innerHTML=amp;
   return false;
