@@ -2,6 +2,7 @@
 
  function addamp(e){
      e.preventDefault();
+  let amp = document.getElementById("amp");
     amp.value++;
     document.getElementById("amp").innerHTML=amp;
 }
