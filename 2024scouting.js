@@ -5,6 +5,7 @@
   let amp = document.getElementById("amp");
     amp.value++;
     document.getElementById("amp").innerHTML=amp;
+  return false;
 }
 function subtractamp(e){
      e.preventDefault();
@@ -12,6 +13,8 @@ function subtractamp(e){
 
     amp.value--;
     document.getElementById("amp").innerHTML=amp;
+  return false;
+ 
 }
 
 
