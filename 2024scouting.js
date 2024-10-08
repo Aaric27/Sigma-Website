@@ -1,3 +1,4 @@
+console.log(document.getElementById("submit"))
 document.getElementById("submit").addEventListener("click",async (e)=>{
  e.preventDefault();
  console.log("clickity clockity");
