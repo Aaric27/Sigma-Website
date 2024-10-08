@@ -48,7 +48,7 @@ p{
 </head>
 <body style="background-color: #333333;">
     <div class="container">
-        <form name="scoutingform" id="scoutingform" method="POST" action="https://script.google.com/macros/s/AKfycbwu4kgs3MB7BCS3_9EEOYWSSGvFXx5kPRzrEwNB9UB4I4QGB-U1uKMSInUJbttVWk83/exec">  
+       <form name="scoutingform" id="scoutingform">
             <table border="0" style="width:100%; border-color: black;">
             <!--Match Information-->
                 <tr>
@@ -94,25 +94,25 @@ p{
                 <tr>
                     <td>Auto Speaker</td>
                     <td>
-                        <button onClick="addautospeak(e)" style="float: left;">+</button>
+                        <button type="button" onClick="addautospeak()" style="float: left;">+</button>
                         <input name="Auto_Speaker" type="text" id="autospeak" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractautospeak(e)" style="float: left;">-</button>
+                        <button type="button" onClick="subtractautospeak()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Auto Amp</td>
                     <td>
-                        <button onClick="addautoamp()" style="float: left;">+</button>
+                        <button type="button" onClick="addautoamp()" style="float: left;">+</button>
                         <input name="Auto_Amp" type="text" id="autoamp" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractautoamp()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractautoamp()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Auto Misses</td>
                     <td>
-                        <button onClick="addautomisses()" style="float: left;">+</button>
+                        <button type="button" onClick="addautomisses()" style="float: left;">+</button>
                         <input name="Auto_Misses" type="text" id="automisses" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractautomisses()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractautomisses()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
@@ -132,41 +132,41 @@ p{
                 <tr>
                     <td>Speaker</td>
                     <td>        
-                        <button onClick="addspeaker()" style="float: left;">+</button>
+                        <button type="button" onClick="addspeaker()" style="float: left;">+</button>
                         <input name="Speaker" type="text" id="speaker" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractspeaker()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractspeaker()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Missed Shots</td>
                     <td>        
-                        <button onClick="addmissedshots()" style="float: left;">+</button>
+                        <button type="button" onClick="addmissedshots()" style="float: left;">+</button>
                         <input name="Missed_Shots" type="text" id="missedshots" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractmissedshots()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractmissedshots()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Amplified Speaker</td>
                     <td>        
-                        <button onClick="addampspeaker()" style="float: left;">+</button>
+                        <button type="button" onClick="addampspeaker()" style="float: left;">+</button>
                         <input name="Amplified_Speaker" type="text" id="amplifiedspeaker" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractampspeaker()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractampspeaker()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Amp</td>
                     <td>
-                        <button onClick="(e)=>addamp(e)" style="float: left;" type="button">+</button>
-                        <input name="amp" type="text" id="amp" style="width:50px; float: left;" value="0">
-                        <button onClick="(e)=>subtractamp(e)" style="float: left;" type="button">-</button>
+                        <button type="button" onClick="addamp()" style="float: left;">+</button>
+                        <input name="Amp" type="text" id="amp" style="width:50px; float: left;" value="0">
+                        <button type="button" onClick="subtractamp()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>Passed Notes</td>
                     <td>
-                        <button onClick="addpassed()" style="float: left;">+</button>
+                        <button type="button" onClick="addpassed()" style="float: left;">+</button>
                         <input name="Passed_Notes" type="text" id="passed" style="width:50px; float: left;" value="0">
-                        <button onClick="subtractpassed()" style="float: left;">-</button>
+                        <button type="button" onClick="subtractpassed()" style="float: left;">-</button>
                     </td>
                 </tr>
                 <!--Endgame Section-->
@@ -227,6 +227,7 @@ p{
                     <td><input name="Endgame_Comments" type="text" id="endgamenotes" style="width: 500px; float:left;"></td>
                 </tr>
                 </table>
+            
             </form>
         </div>
                 <!--EPA CALCULATION AND SUBMIT RECORD-->
